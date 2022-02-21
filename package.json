@@ -1,0 +1,19 @@
+{
+  "name": "jamardmaxime_3_150222",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EllanMXM/JAMARDMaxime_3_150222.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EllanMXM/JAMARDMaxime_3_150222/issues"
+  },
+  "homepage": "https://github.com/EllanMXM/JAMARDMaxime_3_150222#readme"
+}
