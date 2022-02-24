@@ -2,7 +2,7 @@ body {
   margin: 0px;
 }
 
-/* HEADER Ohmyfood Logo */
+/* HEADER Ohmyfood LOGO */
 
 .ohmyfood {
   position: relative;
@@ -16,7 +16,7 @@ body {
   }
 }
 
-/* SECTION  Paris / Belleville */
+/* SECTION  PARIS / BELLEVILLE */
 
 .parisbelleville_loc {
   display: flex;
@@ -54,13 +54,14 @@ body {
   background: linear-gradient(170deg, #ff79da, #9356dc);
 }
 
-/* Section 2  Fonctionnement */
+/* Section 2  FONCTIONNEMENT */
 
 .titre_second {
   margin-left: 5%;
   padding-top: 20px;
 }
 
+/* DIV Choix */
 .choix {
   box-shadow: 5px 5px 5px#0000002e;
   margin: 25px 30px;
@@ -85,6 +86,8 @@ body {
   }
 }
 
+/* SPAN Logo + Texte */
+
 .recherche {
   display: block;
   margin: 0 40px;
@@ -93,9 +96,13 @@ body {
   }
 }
 
+/* Span Logo + bloc */
+
 .choix:hover {
   background-color: rgba(147, 86, 220, 0.1);
   .localisation__logo {
     color: #9356dc;
   }
 }
+
+/* Section 3 RESTAURANTS */
