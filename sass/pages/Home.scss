@@ -1,0 +1,180 @@
+/* SECTION  PARIS / BELLEVILLE */
+
+.introduction__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-size: 14pt;
+  .introduction__location--icone {
+    margin-right: 20px;
+  }
+}
+
+.introduction {
+  display: block;
+  text-align: center;
+  padding-bottom: 70px;
+  background-color: rgb(245, 245, 245);
+  .introduction__title {
+    font-size: 25pt;
+    padding: 0 50px;
+    font-weight: 500;
+  }
+  .introduction__description {
+    padding: 0 50px;
+    font-size: 15pt;
+    margin-bottom: 40px;
+    font-weight: 200;
+  }
+  .introduction__button {
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    font-size: 15pt;
+    padding: 15px 20px;
+    background: $gradient-color;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.02);
+      opacity: 0.9;
+    }
+  }
+}
+
+/* Section 2  FONCTIONNEMENT */
+
+.choice {
+  margin: 50px 0;
+  .choice__title {
+    margin-left: 5%;
+    padding-top: 20px;
+  }
+}
+
+/* DIV Choice__heading */
+
+.choice__heading {
+  box-shadow: 5px 5px 5px#0000002e;
+  margin: 25px 30px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  padding: 25px 0;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.02);
+  }
+  .choice__number {
+    position: absolute;
+    background-color: #9356dc;
+    color: white;
+    width: 23px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 3px;
+    margin-left: -10px;
+  }
+  .choice__location {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 15pt;
+  }
+}
+
+/* SPAN Logo + Texte */
+
+.recherche {
+  display: block;
+  margin: 0 40px;
+  .choice__icone {
+    color: gray;
+    font-size: 15pt;
+  }
+}
+
+/* Span Logo + bloc */
+
+.choice__heading:hover {
+  background-color: rgba(147, 86, 220, 0.1);
+  .choice__icone {
+    color: #9356dc;
+  }
+}
+
+/* Section 3 RESTAURANTS */
+
+/* Section */
+
+.restaurant {
+  background-color: #f0f0f0;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.restaurant__title {
+  font-size: 25pt;
+  font-weight: 600;
+}
+
+.restaurant__picture {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Logo vert Nouveau*/
+
+.restaurant__new {
+  color: #0c6b50;
+  background: #99e2d0;
+  border-radius: 3px;
+  padding: 10px 20px;
+  position: absolute;
+  right: 30px;
+  margin-top: 15px;
+}
+
+.restaurant__menu {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  .restaurant__strong {
+    font-weight: bolder;
+    font-size: 15pt;
+    margin: 10px 15px 0;
+  }
+  .restaurant__light {
+    font-weight: 300;
+    margin: 3px 15px 0;
+  }
+}
+
+.restaurant__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.far {
+  position: absolute;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.restaurant__description:hover .far {
+  transform: scale(1.2);
+  background: $gradient-color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

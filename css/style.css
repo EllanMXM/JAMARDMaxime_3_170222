@@ -1,72 +1,69 @@
-body {
-  margin: 0px;
-}
-
-/* HEADER Ohmyfood LOGO */
-.ohmyfood {
-  position: relative;
-  box-shadow: 0px 0px 5px #0000002e;
-}
-.ohmyfood .ohmyfood_logo {
-  display: flex;
-  max-width: 40%;
-  height: auto;
-  margin: auto;
-  padding: 20px 0px 20px;
-}
-
 /* SECTION  PARIS / BELLEVILLE */
-.parisbelleville_loc {
+.introduction__location {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
-  font-size: large;
+  font-size: 14pt;
 }
-.parisbelleville_loc .parisbelleville_logo {
+.introduction__location .introduction__location--icone {
   margin-right: 20px;
 }
 
-.titre_section {
+.introduction {
   display: block;
   text-align: center;
   padding-bottom: 70px;
   background-color: whitesmoke;
 }
-.titre_section .titre_one {
-  font-size: x-large;
-  padding: 0 110px;
+.introduction .introduction__title {
+  font-size: 25pt;
+  padding: 0 50px;
+  font-weight: 500;
 }
-.titre_section .titre_description {
-  padding: 0 80px;
-  font-size: large;
+.introduction .introduction__description {
+  padding: 0 50px;
+  font-size: 15pt;
   margin-bottom: 40px;
+  font-weight: 200;
 }
-
-.button {
+.introduction .introduction__button {
   text-decoration: none;
   color: white;
   border-radius: 50px;
-  font-size: large;
+  font-size: 15pt;
   padding: 15px 20px;
   background: linear-gradient(170deg, #ff79da, #9356dc);
+  border: none;
+  cursor: pointer;
+}
+.introduction .introduction__button:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 /* Section 2  FONCTIONNEMENT */
-.titre_second {
+.choice {
+  margin: 50px 0;
+}
+.choice .choice__title {
   margin-left: 5%;
   padding-top: 20px;
 }
 
-/* DIV Choix */
-.choix {
+/* DIV Choice__heading */
+.choice__heading {
   box-shadow: 5px 5px 5px #0000002e;
   margin: 25px 30px;
   background-color: whitesmoke;
   border-radius: 20px;
   padding: 25px 0;
+  cursor: pointer;
 }
-.choix .number {
+.choice__heading:hover {
+  transform: scale(1.02);
+}
+.choice__heading .choice__number {
   position: absolute;
   background-color: #9356dc;
   color: white;
@@ -77,10 +74,11 @@ body {
   padding-top: 3px;
   margin-left: -10px;
 }
-.choix .texte {
+.choice__heading .choice__location {
   text-decoration: none;
   color: black;
   margin-left: 20px;
+  font-size: 15pt;
 }
 
 /* SPAN Logo + Texte */
@@ -88,18 +86,129 @@ body {
   display: block;
   margin: 0 40px;
 }
-.recherche .localisation__logo {
+.recherche .choice__icone {
   color: gray;
+  font-size: 15pt;
 }
 
 /* Span Logo + bloc */
-.choix:hover {
+.choice__heading:hover {
   background-color: rgba(147, 86, 220, 0.1);
 }
-.choix:hover .localisation__logo {
+.choice__heading:hover .choice__icone {
   color: #9356dc;
 }
 
 /* Section 3 RESTAURANTS */
+/* Section */
+.restaurant {
+  background-color: #f0f0f0;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.restaurant__title {
+  font-size: 25pt;
+  font-weight: 600;
+}
+
+.restaurant__picture {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+/* Logo vert Nouveau*/
+.restaurant__new {
+  color: #0c6b50;
+  background: #99e2d0;
+  border-radius: 3px;
+  padding: 10px 20px;
+  position: absolute;
+  right: 30px;
+  margin-top: 15px;
+}
+
+.restaurant__menu {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.restaurant__menu .restaurant__strong {
+  font-weight: bolder;
+  font-size: 15pt;
+  margin: 10px 15px 0;
+}
+.restaurant__menu .restaurant__light {
+  font-weight: 300;
+  margin: 3px 15px 0;
+}
+
+.restaurant__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.far {
+  position: absolute;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.restaurant__description:hover .far {
+  transform: scale(1.2);
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+body {
+  margin: 0px;
+  font-family: "Roboto";
+}
+
+/* HEADER Ohmyfood LOGO */
+.ohmyfood {
+  position: relative;
+  box-shadow: 0px 0px 5px #0000002e;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px 15px 0px;
+}
+
+/* FOOTER */
+.footer__logo {
+  filter: invert(100%);
+  height: 20px;
+  padding: 30px 35px 5px 35px;
+}
+
+.notice__footer {
+  background-color: #2c2c2ce1;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 10px;
+}
+.notice__footer .fa-solid {
+  margin-right: 10px;
+}
+.notice__footer .notice {
+  list-style: none;
+  padding-left: 30px;
+  margin-top: none;
+}
+.notice__footer .notice.notice a {
+  text-decoration: none;
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

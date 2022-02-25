@@ -1,5 +1,9 @@
+@import "../utils/variables";
+@import "../pages/Home";
+
 body {
   margin: 0px;
+  font-family: $police-texte;
 }
 
 /* HEADER Ohmyfood LOGO */
@@ -7,102 +11,34 @@ body {
 .ohmyfood {
   position: relative;
   box-shadow: 0px 0px 5px #0000002e;
-  .ohmyfood_logo {
-    display: flex;
-    max-width: 40%;
-    height: auto;
-    margin: auto;
-    padding: 20px 0px 20px;
-  }
-}
-
-/* SECTION  PARIS / BELLEVILLE */
-
-.parisbelleville_loc {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
-  font-size: large;
-  .parisbelleville_logo {
-    margin-right: 20px;
-  }
+  padding: 15px 0px 15px 0px;
 }
 
-.titre_section {
-  display: block;
-  text-align: center;
-  padding-bottom: 70px;
-  background-color: rgb(245, 245, 245);
-  .titre_one {
-    font-size: x-large;
-    padding: 0 110px;
-  }
-  .titre_description {
-    padding: 0 80px;
-    font-size: large;
-    margin-bottom: 40px;
-  }
-}
+/* FOOTER */
 
-.button {
+.footer__logo {
+  filter: invert(100%);
+  height: 20px;
+  padding: 30px 35px 5px 35px;
+}
+.notice__footer {
+  background-color: #2c2c2ce1;
   text-decoration: none;
   color: white;
-  border-radius: 50px;
-  font-size: large;
-  padding: 15px 20px;
-  background: linear-gradient(170deg, #ff79da, #9356dc);
-}
+  padding-bottom: 10px;
 
-/* Section 2  FONCTIONNEMENT */
-
-.titre_second {
-  margin-left: 5%;
-  padding-top: 20px;
-}
-
-/* DIV Choix */
-.choix {
-  box-shadow: 5px 5px 5px#0000002e;
-  margin: 25px 30px;
-  background-color: rgb(245, 245, 245);
-  border-radius: 20px;
-  padding: 25px 0;
-  .number {
-    position: absolute;
-    background-color: #9356dc;
-    color: white;
-    width: 23px;
-    height: 20px;
-    text-align: center;
-    border-radius: 50px;
-    padding-top: 3px;
-    margin-left: -10px;
+  .fa-solid {
+    margin-right: 10px;
   }
-  .texte {
-    text-decoration: none;
-    color: black;
-    margin-left: 20px;
+  .notice {
+    list-style: none;
+    padding-left: 30px;
+    margin-top: none;
+    &.notice a {
+      text-decoration: none;
+      color: white;
+    }
   }
 }
-
-/* SPAN Logo + Texte */
-
-.recherche {
-  display: block;
-  margin: 0 40px;
-  .localisation__logo {
-    color: gray;
-  }
-}
-
-/* Span Logo + bloc */
-
-.choix:hover {
-  background-color: rgba(147, 86, 220, 0.1);
-  .localisation__logo {
-    color: #9356dc;
-  }
-}
-
-/* Section 3 RESTAURANTS */
