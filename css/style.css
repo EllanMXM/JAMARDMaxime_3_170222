@@ -213,6 +213,7 @@ body {
   color: white;
 }
 
+/* Loading Spinner */
 .loader {
   display: flex;
   text-align: center;
