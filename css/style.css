@@ -141,6 +141,9 @@
   border-radius: 20px;
   margin-bottom: 20px;
 }
+.restaurant__menu:hover {
+  transform: scale(1.02);
+}
 .restaurant__menu .restaurant__strong {
   font-weight: bolder;
   font-size: 15pt;
@@ -158,24 +161,41 @@
 }
 
 /* ICONE HEART */
+.fas {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: 20px 35px 0 0;
+  font-size: 20pt;
+}
+
+.restaurant__description:hover .fas {
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+}
+
 .far {
   position: absolute;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  margin: 20px 35px 0 0;
+  font-size: 20pt;
 }
 
 .restaurant__description:hover .far {
-  transform: scale(1.2);
-  background: linear-gradient(170deg, #ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  opacity: 0;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.photo__dishes {
+  max-width: 100%;
 }
 
 body {
   margin: 0px;
-  font-family: "Roboto";
+  font-family: Roboto;
 }
 
 /* HEADER Ohmyfood LOGO */
@@ -233,7 +253,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  animation: spin 2s linear infinite;
+  animation: spin 3s linear infinite;
 }
 
 @keyframes spin {

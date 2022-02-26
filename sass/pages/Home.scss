@@ -69,7 +69,7 @@
   }
   .choice__number {
     position: absolute;
-    background-color: #9356dc;
+    background-color: $primary-color;
     color: white;
     width: 23px;
     height: 20px;
@@ -102,7 +102,7 @@
 .choice__heading:hover {
   background-color: rgba(147, 86, 220, 0.1);
   .choice__icone {
-    color: #9356dc;
+    color: $primary-color;
   }
 }
 
@@ -132,7 +132,7 @@
 
 .restaurant__new {
   color: #0c6b50;
-  background: #99e2d0;
+  background: $tertiary-color;
   border-radius: 3px;
   padding: 10px 20px;
   position: absolute;
@@ -149,6 +149,10 @@
   flex-direction: column;
   border-radius: 20px;
   margin-bottom: 20px;
+  &:hover {
+    transform: scale(1.02);
+  }
+
   .restaurant__strong {
     font-weight: bolder;
     font-size: 15pt;
@@ -168,17 +172,25 @@
 
 /* ICONE HEART */
 
+.fas {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: 20px 35px 0 0;
+  font-size: 20pt;
+}
+.restaurant__description:hover .fas {
+  background-image: $gradient-color;
+}
+
 .far {
   position: absolute;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  margin: 20px 35px 0 0;
+  font-size: 20pt;
 }
 
 .restaurant__description:hover .far {
-  transform: scale(1.2);
-  background: $gradient-color;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  opacity: 0;
 }
