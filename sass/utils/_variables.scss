@@ -1,2 +1,34 @@
 $police-titre: Shrikhand;
 $police-texte: Roboto;
+
+@mixin transform-zoom {
+  transform: scale(1.02);
+}
+
+/* hearts animated */
+
+@mixin heart {
+  .fas {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 20px 35px 0 0;
+    font-size: 20pt;
+  }
+  .far {
+    position: absolute;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin: 20px 35px 0 0;
+    font-size: 20pt;
+  }
+}
+
+@mixin heart-animated {
+  :hover .fas {
+    background-image: $gradient-color;
+  }
+  :hover .far {
+    opacity: 0;
+  }
+}

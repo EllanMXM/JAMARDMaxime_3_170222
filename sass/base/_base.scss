@@ -2,12 +2,15 @@
 @import "../utils/colors.scss";
 @import "../pages/Home";
 @import "../pages/RestaurantFrench";
+@import "../pages/RestaurantSong";
 
 body {
   margin: 0px;
   font-family: $police-texte;
 }
-
+h1 {
+  font-family: $police-titre;
+}
 /* HEADER Ohmyfood LOGO */
 
 .ohmyfood {

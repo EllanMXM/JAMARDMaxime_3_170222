@@ -39,7 +39,7 @@
     border: none;
     cursor: pointer;
     &:hover {
-      transform: scale(1.02);
+      @include transform-zoom;
       opacity: 0.9;
     }
   }
@@ -65,7 +65,7 @@
   padding: 25px 0;
   cursor: pointer;
   &:hover {
-    transform: scale(1.02);
+    @include transform-zoom;
   }
   .choice__number {
     position: absolute;
@@ -150,7 +150,7 @@
   border-radius: 20px;
   margin-bottom: 20px;
   &:hover {
-    transform: scale(1.02);
+    @include transform-zoom;
   }
 
   .restaurant__strong {
@@ -172,25 +172,7 @@
 
 /* ICONE HEART */
 
-.fas {
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  margin: 20px 35px 0 0;
-  font-size: 20pt;
-}
-.restaurant__description:hover .fas {
-  background-image: $gradient-color;
-}
-
-.far {
-  position: absolute;
-  background-clip: text;
-  -webkit-background-clip: text;
-  margin: 20px 35px 0 0;
-  font-size: 20pt;
-}
-
-.restaurant__description:hover .far {
-  opacity: 0;
+.restaurant__description {
+  @include heart;
+  @include heart-animated;
 }
