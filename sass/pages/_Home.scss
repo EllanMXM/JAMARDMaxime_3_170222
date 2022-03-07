@@ -30,18 +30,10 @@
     font-weight: 200;
   }
   .introduction__button {
-    text-decoration: none;
-    color: white;
-    border-radius: 50px;
+    @include btn;
     font-size: 15pt;
-    padding: 15px 20px;
+    padding: 20px 25px;
     background: $gradient-color;
-    border: none;
-    cursor: pointer;
-    &:hover {
-      @include transform-zoom;
-      opacity: 0.9;
-    }
   }
 }
 
@@ -52,6 +44,7 @@
   .choice__title {
     margin-left: 5%;
     padding-top: 20px;
+    font-weight: 500;
   }
 }
 
@@ -118,7 +111,7 @@
 
 .restaurant__title {
   font-size: 25pt;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .restaurant__picture {
@@ -149,12 +142,8 @@
   flex-direction: column;
   border-radius: 20px;
   margin-bottom: 20px;
-  &:hover {
-    @include transform-zoom;
-  }
 
   .restaurant__strong {
-    font-weight: bolder;
     font-size: 15pt;
     margin: 10px 15px 0;
   }
@@ -175,4 +164,8 @@
 .restaurant__description {
   @include heart;
   @include heart-animated;
+  .restaurant__heart {
+    margin: 20px 35px 0 0;
+    font-size: 20pt;
+  }
 }

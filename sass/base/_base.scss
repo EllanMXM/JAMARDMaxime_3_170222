@@ -1,16 +1,8 @@
-@import "../utils/variables";
-@import "../utils/colors.scss";
-@import "../pages/Home";
-@import "../pages/RestaurantFrench";
-@import "../pages/RestaurantSong";
-
 body {
   margin: 0px;
   font-family: $police-texte;
 }
-h1 {
-  font-family: $police-titre;
-}
+
 /* HEADER Ohmyfood LOGO */
 
 .ohmyfood {
@@ -48,6 +40,9 @@ h1 {
   }
 }
 
+.fa-handshake-angle {
+  font-size: 10pt;
+}
 /* Loading Spinner */
 
 .loader {
@@ -61,6 +56,7 @@ h1 {
   inset: 0;
   z-index: 1;
   position: fixed;
+  animation-delay: 1s;
   display: none;
 }
 
@@ -75,15 +71,15 @@ h1 {
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    box-shadow: 1px 5px 2px #e65c00;
+    box-shadow: 1px 5px 2px #0004e6;
   }
   50% {
     transform: rotate(180deg);
-    box-shadow: 1px 5px 2px #18b201;
+    box-shadow: 1px 5px 2px #fcfcfc;
   }
   100% {
     transform: rotate(360deg);
-    box-shadow: 1px 5px 2px #0456c8;
+    box-shadow: 1px 5px 2px #a70000;
   }
 }
 

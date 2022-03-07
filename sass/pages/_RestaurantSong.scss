@@ -19,7 +19,7 @@
   padding-bottom: 20px;
 }
 
-/* */
+/* Title page + Heart */
 
 .title {
   position: relative;
@@ -99,23 +99,25 @@
 }
 
 .menu__check {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color: $tertiary-color;
-  width: 80px;
-  border-radius: 0 10px 10px 0;
-  margin-right: -80px;
-  transition: margin-right 0.5s;
-  color: white;
-  font-size: 20pt;
+  @include check;
 }
+
 .menu__category:hover .menu__check {
   margin-right: 0;
 }
 
-.menu__entry .button__commander {
-  margin: 70px 120px;
+.menu__category:hover .fas {
+  margin-right: 0;
+  animation: check 1s ease;
+}
+
+@keyframes check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 
 .button__commander {
@@ -127,23 +129,9 @@
   background: $gradient-color;
   border: none;
   cursor: pointer;
-
+  margin: 70px 100px;
   &:hover {
     @include transform-zoom;
     opacity: 0.9;
-  }
-}
-
-.menu__check:hover .fas {
-  margin-right: 0;
-  animation: check 1s ease;
-}
-
-@keyframes check {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
   }
 }
