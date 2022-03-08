@@ -1,13 +1,7 @@
 $police-titre: Shrikhand;
 $police-texte: Roboto;
 
-/* Button */
-
-@mixin transform-btn {
-  transform: scale(1.15);
-  transition-property: transform;
-  transition-duration: 1000ms;
-}
+/* Button Couleurs */
 
 @mixin btn {
   text-decoration: none;
@@ -15,16 +9,13 @@ $police-texte: Roboto;
   border-radius: 50px;
   border: none;
   cursor: pointer;
+  background: $gradient-color;
   &:hover {
-    @include transform-btn;
     opacity: 0.9;
+    transform: scale(1.15);
+    transition-property: transform;
+    transition-duration: 1000ms;
   }
-}
-
-/* Pictures */
-
-@mixin transform-zoom {
-  transform: scale(1.02);
 }
 
 /* hearts animated */
@@ -64,4 +55,12 @@ $police-texte: Roboto;
   transition: margin-right 0.5s;
   color: white;
   font-size: 20pt;
+  @keyframes check {
+    0% {
+      transform: rotate(-270deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
 }

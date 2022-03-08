@@ -14,7 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="sass/pages/_Restaurant.scss" />
 
     <title>A la française</title>
   </head>
@@ -32,9 +33,9 @@
       />
     </header>
 
-    <section class="container">
-      <!-- Section Image + Titre -->
+    <!-- Section Image + Titre -->
 
+    <section class="container">
       <section>
         <img
           src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -44,8 +45,11 @@
 
         <div class="title">
           <h1 class="title__french">À la francaise</h1>
-          <i class="far fa-heart"></i>
-          <i class="fas fa-heart"></i>
+
+          <div class="title__heart">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
+          </div>
         </div>
       </section>
 
@@ -56,7 +60,7 @@
 
         <div class="menu__category">
           <p class="menu__strong">
-            Tartare de pouple acidulé <br />
+            Tartare de poulpe acidulé <br />
             <span class="menu__light">Aux zests d'orange</span>
           </p>
           <p class="menu__price">25€</p>
@@ -151,7 +155,7 @@
         </div>
       </section>
 
-      <button class="button__commander" href="#">Commmander</button>
+      <button class="button__commander" href="#">Commander</button>
     </section>
 
     <!-- Footer -->

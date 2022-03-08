@@ -14,13 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="sass/pages/RestaurantSong.scss" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="sass/pages/_Restaurant.scss" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <title>A la française</title>
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- Header LOGO + ICONE -->
 
     <header class="ohmyfood">
       <a href="index.html"> <i class="fa fa-arrow-left"></i></a>
@@ -31,9 +32,10 @@
         class="ohmyfood_logo"
       />
     </header>
-    <section class="container">
-      <!-- Section Image + Titre -->
 
+    <!-- Section Image + Titre -->
+
+    <section class="container">
       <section>
         <img
           src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -42,9 +44,12 @@
         />
 
         <div class="title">
-          <h1 class="title__french">Le délice des sens</h1>
-          <i class="far fa-heart"></i>
-          <i class="fas fa-heart"></i>
+          <h1 class="title__restaurant">Le délice des sens</h1>
+
+          <div class="title__heart__restaurant">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-heart"></i>
+          </div>
         </div>
       </section>
 
@@ -89,7 +94,7 @@
 
         <div class="menu__category">
           <p class="menu__strong">
-            Poulet rôti aux herbes de Provence<br />
+            Poulet rôti aux herbes de <br />Provence<br />
             <span class="menu__light">Et sa crème de truffe</span>
           </p>
           <p class="menu__price">40€</p>
@@ -149,9 +154,12 @@
           <div class="menu__check"><i class="fas fa-circle-check"></i></div>
         </div>
 
-        <button class="button__commander" href="#">Commmander</button>
+        <button class="button__commander__restaurant" href="#">
+          Commmander
+        </button>
       </section>
     </section>
+
     <!-- Footer -->
 
     <footer class="notice__footer">

@@ -2,6 +2,8 @@
 
 /* SECTION  PARIS / BELLEVILLE */
 
+/* Div Paris/Belleville */
+
 .introduction__location {
   display: flex;
   justify-content: center;
@@ -12,6 +14,8 @@
     margin-right: 20px;
   }
 }
+
+/* Grande section Paris/Belleville */
 
 .introduction {
   display: block;
@@ -29,6 +33,9 @@
     margin-bottom: 40px;
     font-weight: 200;
   }
+
+  /* Button Section Paris/Belleville */
+
   .introduction__button {
     @include btn;
     font-size: 15pt;
@@ -39,6 +46,8 @@
 
 /* Section 2  FONCTIONNEMENT */
 
+/* Grande Section */
+
 .choice {
   margin: 50px 0;
   .choice__title {
@@ -48,7 +57,7 @@
   }
 }
 
-/* DIV Choice__heading */
+/* Grand DIV Bloc sous fonctionnement */
 
 .choice__heading {
   box-shadow: 5px 5px 5px#0000002e;
@@ -57,9 +66,7 @@
   border-radius: 20px;
   padding: 25px 0;
   cursor: pointer;
-  &:hover {
-    @include transform-zoom;
-  }
+
   .choice__number {
     position: absolute;
     background-color: $primary-color;
@@ -71,21 +78,24 @@
     padding-top: 3px;
     margin-left: -10px;
   }
+
+  /* SPAN Icone + Texte */
+
+  .recherche {
+    display: block;
+    margin: 0 40px;
+    .choice__icone {
+      color: gray;
+      font-size: 15pt;
+    }
+  }
+
+  /* Texte à coté du logo */
+
   .choice__location {
     text-decoration: none;
     color: black;
     margin-left: 20px;
-    font-size: 15pt;
-  }
-}
-
-/* SPAN Logo + Texte */
-
-.recherche {
-  display: block;
-  margin: 0 40px;
-  .choice__icone {
-    color: gray;
     font-size: 15pt;
   }
 }
@@ -101,7 +111,7 @@
 
 /* Section 3 RESTAURANTS */
 
-/* Section */
+/* Grande Section  Restaurant */
 
 .restaurant {
   background-color: #f0f0f0;
@@ -133,6 +143,8 @@
   margin-top: 15px;
 }
 
+/* Bloc restaurant Img + texte + Icone */
+
 .restaurant__menu {
   text-decoration: none;
   color: black;
@@ -152,6 +164,8 @@
     margin: 3px 15px 0;
   }
 }
+
+/* DIV Texte sous IMG */
 
 .restaurant__description {
   display: flex;

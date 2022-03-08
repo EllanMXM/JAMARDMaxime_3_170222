@@ -1,0 +1,193 @@
+body {
+  font-family: $police-texte;
+}
+
+/* Banner + ICONE Retour */
+
+.fa {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  color: #000;
+  font-size: 20pt;
+}
+
+.banner {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+/* Section Container = Toute la page */
+
+.container {
+  background-color: rgb(245, 245, 245);
+  padding-bottom: 20px;
+}
+
+/* DIV Title =  Title / Heart */
+
+.title {
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  border-radius: 40px 40px 0 0;
+  align-items: center;
+  margin: -40px 0 0 0;
+  font-family: $police-titre;
+  .title__french {
+    font-size: 30pt;
+    margin-left: 35px;
+    margin-bottom: 0;
+  }
+  .title__heart {
+    font-size: 30pt;
+    cursor: pointer;
+    margin: 50px 0 0 85px;
+    @include heart;
+  }
+}
+
+.title__heart:hover .fas {
+  background-image: $gradient-color-hearth;
+}
+.title__heart:hover .far {
+  opacity: 0;
+}
+
+/* Section Entrées + Underline green */
+
+.menu__entry {
+  margin: 50px 20px 30px 20px;
+  position: relative;
+  .title__dish {
+    width: 95%;
+    margin: 0;
+    font-size: 15pt;
+    margin-left: 15px;
+    font-weight: 300;
+  }
+  .title-underline {
+    border-bottom: 3px solid $tertiary-color;
+    padding-bottom: 5px;
+    margin: 0;
+    font-size: 15pt;
+  }
+}
+
+/* DIV bloc + texte */
+
+.menu__category {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgb(220, 220, 220);
+  margin-top: 20px;
+  display: flex;
+  height: 90px;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 15pt;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  .menu__strong {
+    margin: 0px;
+    font-weight: 500;
+    margin: 20px 0 0 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 18pt;
+    .menu__light {
+      font-weight: 200;
+      font-size: 15pt;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}
+
+.menu__price {
+  margin: 0;
+  font-weight: 500;
+  margin-left: auto;
+  padding: 50px 25px 0 15px;
+}
+
+/* DIV check */
+
+.menu__check {
+  @include check;
+}
+
+.menu__category:hover .menu__check {
+  margin-right: 0;
+}
+
+.menu__category:hover .fas {
+  margin-right: 0;
+  animation: check 1s ease;
+}
+
+/* Button */
+
+.menu__entry .button__commander {
+  margin: 70px 120px;
+}
+
+.button__commander {
+  @include btn;
+  font-size: 17pt;
+  padding: 25px 70px;
+  margin: 50px 0 100px 110px;
+}
+
+/* Restaurant Taste + Song + Delight = Title + heart */
+
+/* DIV Title =  Title / Heart  */
+
+.title__restaurant {
+  font-size: 26pt;
+  margin-left: 35px;
+  margin-bottom: 0;
+}
+.title__heart__restaurant {
+  font-size: 30pt;
+  cursor: pointer;
+  margin-left: 55px;
+  .fas {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+  }
+  .far {
+    position: absolute;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+.title__heart__restaurant:hover .fas {
+  background-image: $gradient-color-hearth;
+}
+.title__heart__restaurant:hover .far {
+  opacity: 0;
+}
+
+/* Button */
+
+.button__commander__restaurant {
+  @include btn;
+  font-size: 17pt;
+  padding: 25px 70px;
+  margin: 80px 0 70px 90px;
+}
+
+.menu__category:hover .fas {
+  margin-right: 0;
+  animation: check 1s ease;
+}
