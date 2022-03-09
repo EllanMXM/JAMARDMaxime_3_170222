@@ -61,7 +61,7 @@ body {
   inset: 0;
   z-index: 1;
   position: fixed;
-  animation: load 3000ms forwards;
+  animation: load 2000ms forwards;
 }
 .loader::after {
   animation: spin 10ms forwards;
@@ -384,7 +384,7 @@ body {
   font-weight: 300;
 }
 .menu__entry .title-underline {
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 4px solid #99e2d0;
   padding-bottom: 5px;
   margin: 0;
   font-size: 15pt;
@@ -405,7 +405,6 @@ body {
   cursor: pointer;
   font-size: 15pt;
   text-overflow: ellipsis;
-  overflow: hidden;
   white-space: nowrap;
   height: 90px;
 }
@@ -560,7 +559,6 @@ body {
   cursor: pointer;
   font-size: 15pt;
   text-overflow: ellipsis;
-  overflow: hidden;
   white-space: nowrap;
   height: 120px;
 }
