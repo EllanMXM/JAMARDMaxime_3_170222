@@ -392,6 +392,7 @@ body {
 
 /* DIV bloc + texte */
 .menu__category {
+  animation: plat 2s;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px gainsboro;
@@ -404,6 +405,15 @@ body {
   overflow: hidden;
   white-space: nowrap;
   height: 90px;
+}
+.menu__category:nth-child(3) {
+  animation-delay: 300ms;
+}
+.menu__category:nth-child(4) {
+  animation-delay: 400ms;
+}
+.menu__category:nth-child(5) {
+  animation-delay: 500ms;
 }
 .menu__category .menu__strong {
   margin: 0px;
@@ -578,6 +588,16 @@ body {
   margin-right: 0;
 }
 
+@keyframes plat {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*
 
 ORDRE D'IMPORTATION

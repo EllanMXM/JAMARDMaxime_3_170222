@@ -80,6 +80,12 @@ body {
 /* DIV bloc + texte */
 
 .menu__category {
+  @for $i from 3 through 5 {
+    &:nth-child(#{$i}) {
+      animation-delay: 100ms * $i;
+    }
+  }
+  animation: plat 2s;
   @include carte;
   height: 90px;
 }
@@ -175,4 +181,15 @@ body {
 
 .menu__autre:hover .menu__check {
   margin-right: 0;
+}
+
+@keyframes plat {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
