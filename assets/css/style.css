@@ -392,6 +392,9 @@ body {
 
 /* DIV bloc + texte */
 .menu__category {
+  /* 3 à 5 car il ne reconnait pas les enfants si on met de 1 à 3 */
+  /* 3 à 5 car il ne reconnait pas les enfants si on met de 1 à 3 */
+  /* 3 à 5 car il ne reconnait pas les enfants si on met de 1 à 3 */
   animation: plat 2s;
   background-color: #fff;
   border-radius: 15px;
