@@ -80,34 +80,8 @@ body {
 /* DIV bloc + texte */
 
 .menu__category {
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0px 5px 10px 0px rgb(220, 220, 220);
-  margin-top: 20px;
-  display: flex;
+  @include carte;
   height: 90px;
-  overflow: hidden;
-  cursor: pointer;
-  font-size: 15pt;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  .menu__strong {
-    margin: 0px;
-    font-weight: 500;
-    margin: 20px 0 0 10px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    font-size: 18pt;
-    .menu__light {
-      font-weight: 200;
-      font-size: 15pt;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-  }
 }
 
 .menu__price {
@@ -187,7 +161,18 @@ body {
   margin: 80px 0 70px 90px;
 }
 
-.menu__category:hover .fas {
+/* Delight PLAT plus grand  */
+
+.menu__autre {
+  @include carte;
+  height: 120px;
+}
+
+.menu__autre:hover .fas {
   margin-right: 0;
   animation: check 1s ease;
+}
+
+.menu__autre:hover .menu__check {
+  margin-right: 0;
 }

@@ -397,19 +397,20 @@ body {
   box-shadow: 0px 5px 10px 0px gainsboro;
   margin-top: 20px;
   display: flex;
-  height: 90px;
   overflow: hidden;
   cursor: pointer;
   font-size: 15pt;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  height: 90px;
 }
 .menu__category .menu__strong {
   margin: 0px;
   font-weight: 500;
   margin: 20px 0 0 10px;
   text-overflow: ellipsis;
+  /* Permet d'avoir les 3 petits point */
   overflow: hidden;
   white-space: nowrap;
   font-size: 18pt;
@@ -535,9 +536,46 @@ body {
   transition-duration: 1000ms;
 }
 
-.menu__category:hover .fas {
+/* Delight PLAT plus grand  */
+.menu__autre {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px gainsboro;
+  margin-top: 20px;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 15pt;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  height: 120px;
+}
+.menu__autre .menu__strong {
+  margin: 0px;
+  font-weight: 500;
+  margin: 20px 0 0 10px;
+  text-overflow: ellipsis;
+  /* Permet d'avoir les 3 petits point */
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 18pt;
+}
+.menu__autre .menu__strong .menu__light {
+  font-weight: 200;
+  font-size: 15pt;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu__autre:hover .fas {
   margin-right: 0;
   animation: check 1s ease;
+}
+
+.menu__autre:hover .menu__check {
+  margin-right: 0;
 }
 
 /*
