@@ -1,0 +1,40 @@
+/* Tablette min 768px */
+
+@media screen and (min-width: 768px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .restaurant__title {
+      width: 100%;
+      justify-content: center;
+      display: flex;
+    }
+    .restaurant__menu {
+      width: 45%;
+    }
+  }
+  .restaurant__new {
+    display: contents;
+    font-weight: 900;
+    font-size: 20pt;
+  }
+
+  .choice__heading {
+    max-width: 50%;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .choice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .choice__title {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0%;
+    }
+  }
+}
