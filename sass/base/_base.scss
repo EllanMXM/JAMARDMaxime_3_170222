@@ -67,7 +67,7 @@ body {
   position: fixed;
   animation: load 2000ms forwards;
   &::after {
-    animation: spin 10ms forwards;
+    animation: spin 0ms forwards;
   }
 }
 
@@ -91,7 +91,6 @@ body {
   100% {
     transform: rotate(360deg);
     box-shadow: 1px 5px 2px $tertiary-color;
-    visibility: hidden;
   }
 }
 
