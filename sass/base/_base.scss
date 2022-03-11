@@ -71,6 +71,8 @@ body {
   }
 }
 
+/* Rond du load spinner */
+
 .spin {
   position: absolute;
   width: 200px;
@@ -94,20 +96,12 @@ body {
   }
 }
 
+/* Disparition du load spinner */
+
 @keyframes load {
   100% {
     visibility: hidden;
   }
-}
-
-.spin::before {
-  position: absolute;
-  left: 0;
-  top: O;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgba(5, 4, 4, 0.3);
 }
 
 .loader__text {
