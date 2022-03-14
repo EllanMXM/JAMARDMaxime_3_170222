@@ -478,7 +478,10 @@ body {
   background: linear-gradient(176deg, #ff79da -15%, #9356dc);
   font-size: 17pt;
   padding: 25px 70px;
-  margin: 50px 0 100px 110px;
+  display: flex;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 70px;
 }
 .button__commander:hover {
   opacity: 0.9;
@@ -530,7 +533,10 @@ body {
   background: linear-gradient(176deg, #ff79da -15%, #9356dc);
   font-size: 17pt;
   padding: 25px 70px;
-  margin: 80px 0 70px 90px;
+  display: flex;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 70px;
 }
 .button__commander__restaurant:hover {
   opacity: 0.9;
