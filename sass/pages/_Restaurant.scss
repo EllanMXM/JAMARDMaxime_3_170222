@@ -83,10 +83,10 @@ body {
   @for $i from 3 through 5 {
     /* 3 à 5 car il ne reconnait pas les enfants si on met de 1 à 3 */
     &:nth-child(#{$i}) {
-      transition-delay: 100ms;
+      animation-delay: 100ms;
     }
   }
-  animation: plat 2s;
+  animation: plat 3s;
   @include carte;
   height: 90px;
 }

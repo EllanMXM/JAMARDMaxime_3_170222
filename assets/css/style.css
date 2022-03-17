@@ -384,7 +384,7 @@ body {
   /* 3 à 5 car il ne reconnait pas les enfants si on met de 1 à 3 */
   /* 3 à 5 car il ne reconnait pas les enfants si on met de 1 à 3 */
   /* 3 à 5 car il ne reconnait pas les enfants si on met de 1 à 3 */
-  animation: plat 2s;
+  animation: plat 3s;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px gainsboro;
@@ -398,13 +398,13 @@ body {
   height: 90px;
 }
 .menu__category:nth-child(3) {
-  transition-delay: 100ms;
+  animation-delay: 100ms;
 }
 .menu__category:nth-child(4) {
-  transition-delay: 100ms;
+  animation-delay: 100ms;
 }
 .menu__category:nth-child(5) {
-  transition-delay: 100ms;
+  animation-delay: 100ms;
 }
 .menu__category .menu__strong {
   margin: 0px;
