@@ -63,7 +63,7 @@ body {
   animation: load 3000ms forwards;
 }
 .loader::after {
-  animation: spin 0ms forwards;
+  animation: spin 1ms forwards;
 }
 
 /* Rond du load spinner */

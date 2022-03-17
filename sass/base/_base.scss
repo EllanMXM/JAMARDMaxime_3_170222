@@ -67,7 +67,7 @@ body {
   position: fixed;
   animation: load 3000ms forwards;
   &::after {
-    animation: spin 0ms forwards;
+    animation: spin 1ms forwards;
   }
 }
 
