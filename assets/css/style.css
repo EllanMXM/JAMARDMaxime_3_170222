@@ -37,7 +37,6 @@ body {
 .notice__footer .notice {
   list-style: none;
   padding-left: 30px;
-  margin-top: none;
 }
 .notice__footer .notice.notice a {
   text-decoration: none;
@@ -151,7 +150,6 @@ body {
   background: linear-gradient(176deg, #ff79da -15%, #9356dc);
   font-size: 15pt;
   padding: 20px 25px;
-  background: linear-gradient(176deg, #ff79da -15%, #9356dc);
 }
 .introduction .introduction__button:hover {
   opacity: 0.9;
