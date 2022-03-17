@@ -84,6 +84,7 @@ body {
     /* 3 à 5 car il ne reconnait pas les enfants si on met de 1 à 3 */
     &:nth-child(#{$i}) {
       animation-delay: 100ms;
+      animation-name: plat;
     }
   }
   animation: plat 2s;
